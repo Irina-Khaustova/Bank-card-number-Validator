@@ -41,6 +41,8 @@ export default class CheckSystem {
     if (this.isValidNumber === 'valid') {
       document.querySelector(`.${this.paymentSystem}`).classList.add('active');
       this.buttonValid.textContent = 'Карта валидна';
+    } else {
+      this.buttonValid.textContent = 'Номер карты введен неверно';
     }
   }
 }
